@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- navber -->
+    <div class="flex  w-[100%] mt-4 justify-center p-4 bg-fuchsia-100 bg-opacity-85"> 
+         <sup id="add" class="text-3xl text-green-400 font-bold">0</sup><img class="w-[50px]" src="./js/img/website.png" alt="">
+    </div>
+    <!-- banner -->
+    <div class="bg-base-200">
+        <div class="hero bg-base-200 min-h-screen w-[85%] mx-auto">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-28">
+                <img src="./js/img/travel.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                <div>
+                    <h1 class="text-5xl font-bold">Let's Travel</h1>
+                    <p class="py-6">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <h1 class="text-3xl text-black font-bold">Total Budget: <span id="doller"
+                            class="text-3xl font-bold">900 </span>$</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="main-section" class="w-[98%] mx-auto grid grid-cols-2  gap-[5%]">
+        <div class="w-[100%] h-[280px]  grid grid-rows-1  lg:grid-cols-2  gap-[5px] mb-5 ">
+
+            <div id="curt-1" class="flex bg-slate-300 shadow-xl shadow-black  w-[100%]   ">
+                <div class="w-[50%] p-1 rounded ">
+                    <img src="./js/img/lake.jpg" alt="">
+                </div>
+                <div class="mx-auto">
+                    <h1 class="text-3xl font-bold">Sajek</h1>
+                    <h2 class="text-2xl font-bold">cost: <span id="sajek">200</span>$ </h2>
+                    <button  class="bt bg-slate-600 text-white p-1 rounded">Add to curt</button>
+                </div>
+            </div>
+            <div id="curt-2" class="flex bg-slate-300 shadow-xl shadow-black  w-[100%]   ">
+                <div class="w-[50%] p-1 rounded ">
+                    <img src="./js/img/water.jpg" alt="">
+                </div>
+                <div class="mx-auto">
+                    <h1 class="text-3xl font-bold">Cox-Bazar</h1>
+                    <h2 class="text-2xl font-bold">cost: <span id="cox">500</span>$ </h2>
+                    <button  class=" bt bg-slate-500 text-white p-1 rounded">Add to curt</button>
+                </div>
+            </div>
+            <div id="curt-3" class="flex bg-slate-300 shadow-xl shadow-black  w-[100%]   ">
+                <div class="w-[50%] p-1 rounded ">
+                    <img src="./js/img/penguin.jpg" alt="">
+                </div>
+                <div class="mx-auto">
+                    <h1 class="text-3xl font-bold">Island</h1>
+                    <h2 class="text-2xl font-bold">cost: <span id="island">100</span>$ </h2>
+                    <button  class= " bt bg-slate-500 text-white p-1 rounded">Add to curt</button>
+                </div>
+            </div>
+            <div id="curt-4" class="flex p-2 bg-slate-300 shadow-xl shadow-black  w-[100%]   ">
+                <div class="w-[50%] p-1 rounded ">
+                    <img src="./js/img/mountains.jpg" alt="">
+                </div>
+                <div class="mx-auto">
+                    <h1 class="text-3xl font-bold">Sylet</h1>
+                    <h2 class="text-2xl font-bold">cost: <span id="sylet">200</span>$ </h2>
+                    <button  class=" bt bg-slate-500 text-white p-1 rounded">Add to curt</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-[100%]">
+            <h1 class="mx-auto text-3xl font-bold text-center border-y-2 mb-6 border-black p-2">Curt</h1>
+
+            <ul id="selected-place-container" class="selected-place-container" >
+
+            </ul>
+            <div class="border-y-2 border-black text-center p-4">
+                <h2 class="text-2xl ">
+                    Total cost: <span id="total-cost">0 </span>$
+               </h2>
+               <div class="grid grid-rows-1 lg:grid-cols-3 gap-4">
+                <button onclick="grandTotalCost('bus')" class="bg-gray-300 p-2">bus+100</button>
+                <button onclick="grandTotalCost('train')" id="train" class="bg-gray-300 p-2">train-200</button>
+                <button onclick="grandTotalCost('flight')" id="flight" class="bg-gray-300 p-2">flight+100</button>
+               </div>
+            </div>
+
+            <h1 class="mx-auto text-3xl font-bold text-center  mb-6  p-2">Grand Total: <span id="g-total"> 0 </span>$</h1>
+            
+        </div>
+
+
+
+    </section>
+    <script src="./js/index.js"></script>
+    <script src="./js/utilaize.js"></script>
+</body>
+
+</html>
