@@ -74,7 +74,7 @@ function grandTotalCost(category){
         setInnerText('g-total', convertAdd - 200)
     }
     else if(category==='flight'){
-        setInnerText('g-total', convertAdd +500)
+        setInnerText('g-total', convertAdd + 500)
     }
     else {
         setInnerText('g-total', convertAdd )
