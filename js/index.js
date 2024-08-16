@@ -73,7 +73,7 @@ function grandTotalCost(category){
     else if(category==='train'){
         setInnerText('g-total', convertAdd - 200)
     }
-    else if(category==='fligh'){
+    else if(category==='flight'){
         setInnerText('g-total', convertAdd +500)
     }
     else {
